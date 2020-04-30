@@ -1,0 +1,60 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__group
+        test
+      .main-header__left-box__member-list
+        メンバー
+        .main-header__left-box__member-list__member
+          ji
+    = link_to "#", class: "main-header__edit" do
+      .main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          こうすけ
+        .message__upper-info__date
+          4/30
+      .message__text
+        こんにちは
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          こうすけ
+        .message__upper-info__date
+          4/30
+      .message__text
+        こんにちは
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          こうすけ
+        .message__upper-info__date
+          4/30
+      .message__text
+        こんにちは
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          こうすけ
+        .message__upper-info__date
+          4/30
+      .message__text
+        こんにちは
+  .form
+    .new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{for: "image", class: "input-box__image"}
+          = icon('fa', 'image')
+          %input{type: "file", id: "image", class: "hidden"}
+      .submit-btn 
+        Send
+
+
+
+
+
+
