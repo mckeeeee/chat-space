@@ -57,8 +57,11 @@
     height: calc(100vh - 100px);
     padding: 20px;
     .group{
-      color: white;
-      text-decoration: none;  
+      a{
+        color: white;
+        text-decoration: none; 
+    }
+       
       margin-bottom: 40px;
       &__name{
         font-size: 15px;
