@@ -4,11 +4,11 @@ $(function(){
      var html =
       `<div class="message" data-message-id=${message.id}>
         <div class="upper-message">
-          <div class="message__upper-info">
-            <div class="message__upper-info__talker">
+          <div class="upper-info">
+            <div class="upper-info__talker">
              ${message.user_name}
            </div>
-            <div class="message__upper-info__date">
+            <div class="upper-info__date">
              ${message.created_at}
            </div>
          </div>
@@ -17,7 +17,7 @@ $(function(){
              ${message.content}
            </p>
         </div>
-         <img src=${message.image} >
+        <img src=${message.image} >
        </div>`
      return html;
    } else {
